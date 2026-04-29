@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Yara & Youssef | Wedding Celebration</title>
+    <meta name="description" content="Join us to celebrate the wedding of Yara and Youssef.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Outfit:wght@200;300;400;500&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ENTRY SCREEN - Wall image only, click to open -->
+<div id="seal-screen">
+    <div class="seal-wall-bg" onclick="openInvitation()" title="Tap to open">
+        <img src="wall.jpg" alt="Wedding Invitation" class="wall-image">
+    </div>
+</div>
+
+<!-- MAIN INVITATION -->
+<div id="invitation" style="display:none; opacity:0">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">Y <span class="amp">&</span> Y</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#rsvp" class="btn-primary">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg parallax"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal fade-up">
+            <p class="quran-verse">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</p>
+            <p class="quran-ref">— سورة الفرقان: ٧٤ —</p>
+            <h3 class="hero-subtitle">Together with their families</h3>
+            <h1 class="hero-title">Yara <br><span class="amp">&</span> Youssef</h1>
+            <p class="hero-date">July 18th, 2026</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <p class="countdown-label">Counting the days to our forever</p>
+            <div class="countdown-grid">
+                <div class="c-unit">
+                    <span class="c-num" id="cd-days">—</span>
+                    <span class="c-lbl">Days</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-hours">—</span>
+                    <span class="c-lbl">Hours</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-mins">—</span>
+                    <span class="c-lbl">Minutes</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-secs">—</span>
+                    <span class="c-lbl">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="details" class="section details-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">When & Where</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="details-grid" style="justify-content:center;">
+                <div class="detail-card reveal fade-up" style="transition-delay: 0.1s; max-width:480px;">
+                    <h3 class="serif">Katb Ktab &amp; Wedding</h3>
+                    <p class="date">18 / 7 / 2026</p>
+                    <p class="time">8 - 9.30 PM</p>
+                    <p class="location">
+                        Masjid Al-Jame'a — Second New Cairo
+                        <br>
+                        <span class="location-ar">مسجد الجامع — القاهرة الجديدة</span>
+                    </p>
+                    <a class="detail-map-btn" href="https://maps.app.goo.gl/BY3HNCKbVHdyF8zx8" target="_blank">Get Directions ↗</a>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin: 0 0 3rem;">
+                <a class="cal-btn" href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260718T180000Z%0ADTEND:20260719T000000Z%0ASUMMARY:Yara%20%26%20Youssef%27s%20Wedding%0ALOCATION:Masjid%20Al-Jame%27a%2C%20Madinaty%0ADESCRIPTION:Katb%20Ktab%20%26%20Wedding%20Celebration%0AEND:VEVENT%0AEND:VCALENDAR" download="yara-youssef-wedding.ics">📅 Add to Calendar</a>
+            </div>
+
+            <div class="map-container reveal fade-up" style="transition-delay: 0.3s;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.2!2d31.6!3d30.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f574e44cb2b3%3A0x8ea937d886df0dec!2z2YHZhtYK2YIg2KfZhNmC2YjYp9TSINK4INij2YTZhdal2K_Zpdin!5e0!3m2!1sar!2seg!4v1680193165242!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / What to Wear Section -->
+    <section id="gallery" class="section gallery-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">What to Wear</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="slideshow reveal fade-up">
+                <div class="slideshow-track" id="slideshowTrack">
+                    <div class="slide active">
+                        <img src="a.jpg" alt="Dress Code">
+                        <div class="slide-caption">
+                            <span class="slide-title">Elegance</span>
+                            <span class="slide-sub">Dress Code Inspiration</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="b.jpg" alt="Style Guide">
+                        <div class="slide-caption">
+                            <span class="slide-title">Colour Palette</span>
+                            <span class="slide-sub">Dress Code Inspiration</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="code.jpg" alt="Wedding Style">
+                        <div class="slide-caption">
+                            <span class="slide-title">Timeless Style</span>
+                            <span class="slide-sub">Dress Code Inspiration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="slideshow-controls">
+                    <button class="slide-btn" onclick="changeSlide(-1)" aria-label="Previous">&#8592;</button>
+                    <div class="slide-dots" id="slideDots"></div>
+                    <button class="slide-btn" onclick="changeSlide(1)" aria-label="Next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / Good to Know -->
+    <section id="faq" class="section faq-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">Good to Know</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-list">
+
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>
+                            Is parking available at the venue?
+                            <span class="faq-q-ar">هل تتوفر أماكن ركن للسيارات؟</span>
+                        </span>
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Yes! Complimentary parking is available for all wedding guests at the main entrance. Let the attendant know you are a guest at the Yara &amp; Youssef wedding.
+                        <br><br>
+                        <span class="faq-ar">نعم! تتوفر خدمة ركن السيارات المجاني لجميع ضيوف حفل الزفاف عند المدخل الرئيسي. أخبر المنتظِر أنك ضيف في حفل زفاف يارا ويوسف.</span>
+                    </div></div>
+                </div>
+
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>
+                            Are children welcome?
+                            <span class="faq-q-ar">هل الأطفال مرحب بهم؟</span>
+                        </span>
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Parents should control their children and not allow them to play and run around in the area. They won't be able to do that — it's safer for them to stay at home.
+                        <br><br>
+                        <span class="faq-ar">على الآباء والأمهات الإشراف على أطفالهم وعدم السماح لهم باللعب والجري في المكان. لن يتمكنوا من ذلك — فالأفضل لهم البقاء في المنزل.</span>
+                    </div></div>
+                </div>
+
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>
+                            Can I take photos during the ceremony?
+                            <span class="faq-q-ar">هل يمكنني التقاط صور أثناء الحفل؟</span>
+                        </span>
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        No need for crowds or intrusion — there will be a photographer and we'll all take souvenir photos together.
+                        <br><br>
+                        <span class="faq-ar">لا داعي للازدحام أو التدخل — سيكون هناك مصور متخصص وسنأخذ جميعًا صورًا تذكارية معًا.</span>
+                    </div></div>
+                </div>
+
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)">
+                        <span>
+                            Will there be food and beverages?
+                            <span class="faq-q-ar">هل ستُقدَّم الأطعمة والمشروبات؟</span>
+                        </span>
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        A curated selection of appetizers, delicate desserts, and fine beverages will be served for your enjoyment.
+                        <br><br>
+                        <span class="faq-ar">ستُقدَّم لكم تشكيلة مختارة من المقبلات والحلويات الرقيقة والمشروبات الفاخرة لإمتاعكم.</span>
+                    </div></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="section rsvp-bg">
+        <div class="container">
+            <div class="glass-container reveal fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">RSVP</h2>
+                    <p class="subtitle" style="margin-top:0.5rem; color: var(--blue-mid);">Please respond by June 1st, 2026</p>
+                    <div class="divider"></div>
+                </div>
+                <form class="rsvp-form" id="rsvpForm">
+                    <div class="form-group">
+                        <label for="name">Guest Name(s)</label>
+                        <input type="text" id="name" name="name" placeholder="Mr. & Mrs. ..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Will you attend?</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="attending" value="yes" required> Joyfully Accept</label>
+                            <label class="radio-label"><input type="radio" name="attending" value="no"> Regretfully Decline</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" class="form-select">
+                            <option value="1">Just me (1)</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Leave a lovely note or wish 💕</label>
+                        <input type="text" id="message" name="message" placeholder="...">
+                    </div>
+                    <button type="button" class="btn-submit" onclick="submitRsvpWhatsApp()">Confirm RSVP</button>
+                </form>
+                <div class="rsvp-success" id="rsvpSuccess" style="display:none">
+                    <p>Thank you — your RSVP has been received!</p>
+                    <span>We cannot wait to celebrate with you 💐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section story-bg" style="padding: 4rem 0 2rem 0; text-align: center;">
+        <div class="container">
+            <h2 class="nav-logo" style="margin-bottom: 1rem;">Y<span class="amp">&</span>Y</h2>
+            <div class="footer-divider"></div>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top:1rem;">Made with love for July 18th, 2026</p>
+        </div>
+    </footer>
+
+</div><!-- /invitation -->
+
+<!-- Music FAB -->
+<div class="music-fab" id="musicFab" onclick="toggleMusic()" style="display:none" title="Toggle music">
+    <div class="music-bars" id="musicBars">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+<audio id="bgMusic" loop>
+    <source src="vvv.mp4" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
